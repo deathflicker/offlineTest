@@ -1,0 +1,9 @@
+<!-- (A) REGISTER SERVICE WORKER -->
+<script>
+  navigator.serviceWorker.register("script.js")
+    .then(reg => console.log(reg)) // ok
+    .catch(err => console.error(err)); // error
+</script>
+
+<!-- (B) CONTENT AS USUAL -->
+<h1>Hello Offline World!</h1>
